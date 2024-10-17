@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vesty Kids - Página de Produto</title>
+    <link rel="icon" href="img/logovesty.favicon.io" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+    <body>
+    <div class="header">    
+    <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logovesty.jpeg" width="125px"></a>
+                </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="conta.html">Conta</a></li>
+                </ul>
+            </nav>
+            <a href="carrinho.html"><img src="img/cart.png" width="30px" height="30px"></a> 
+        </div>
+    </div>
+</div>
+
+<!------- Detalhes do produto ------>
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="img/gallery-1.jpg" width="100%" id="ProductImg">
+
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/gallery-1.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-2.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-3.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-4.jpg" width="100%" class="small-img">
+                </div>
+            </div>
+<!------Titulo------>
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Produtos Relacionados</h2>
+            <p>Veja Mais</p>
+        </div>
+    </div>
+
+<!------Produto------>     
+        </div>
+        <div class="col-2">
+            <p>Home / Camiseta</p>
+            <h1>Nome do Produto</h1>
+            <h4>R$50,00</h4>
+            <select>
+                <option>Selecione o Tamanho</option>
+                <option>De 0 a 3 anos</option>
+                <option>De 4 a 6 anos</option>
+                <option>De 7 a 10 anos</option>
+                <option>De 11 a 14 anos</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Adicione ao Carrinho</a>
+
+            <h3>Detalhes do Produto</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+               nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<!------- Todos os produtos ------>
+ <div class="small-container">
+    <div class="row">
+        <div class="col-4">
+            <a href="paginaproduto.html"><img src="img/product-1.jpg"></a>
+            <h4>Camiseta Vermelha</h4>
+            <p>R$50,00</p>
+        </div>
+        <div class="col-4">
+            <img src="img/product-2.jpg">
+            <h4>Tênis Preto</h4>
+            <p>R$120,00</p>
+        </div>
+        <div class="col-4">
+            <img src="img/product-3.jpg">
+            <h4>Calça Cinza</h4>
+            <p>R$70,00</p>
+        </div>
+        <div class="col-4">
+            <img src="img/product-4.jpg">
+            <h4>Camiseta Polo Azul</h4>
+            <p>R$65,00</p>
+        </div>
+    </div>
+    </div>
+<!-----Footer---->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <img src="img/logovesty.png">
+                <p>Direitos Reservados para Vesty kids.</p>
+            </div>
+            <div class="footer-col-2">
+                <h3>Links</h3>
+                <ul>
+                    <li>Cupons</li>
+                    <li>Posts</li>
+                    <li>Ofertas</li>
+                    <li>Produtos</li>
+                </ul>    
+            </div>
+            <div class="footer-col-3">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>    
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2024 Vesty-Kids</p>
+    </div>
+</div>
+
+
+<!-------- js  produto galeria------->
+    <script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        }
+
+    </script>
+
+    </body>
+</html>

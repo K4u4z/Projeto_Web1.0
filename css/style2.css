@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+main{
+padding:30px;
+background-color: white;
+margin: 20px auto;
+max-width: 900px;
+box-shadow: 0 0 15px rgba(0,0,0 0.1);
+border-radius: 10px;
+}
+
+
+.formCadastro{
+    
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+.Cadastrar{
+    background-color: #333;
+    padding: 30px 50px 50px;
+   
+}
+
+input{
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #333;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+label{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+}
+
+button.enviar{
+    padding: 15px 30px;
+    background-color: #e0c31f;
+    color: white;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button.enviar:hover{
+    background-color: rgb(240, 236, 39);
+    color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+}
