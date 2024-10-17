@@ -39,8 +39,7 @@
             <div class="col-2">
                <div class="form-container">
                 <div class="form-btn">
-                    <span onclick="login()">Login</span>
-                    <span onclick="register()">Register</span>
+                    <span>Login</span>
                     <hr id="Indicador">
                 </div>
 
@@ -96,28 +95,6 @@
         <p class="Copyright">Copyright 2024 Vesty-Kids</p>
     </div>
 </div>
-<!-------- js  Formulário------->
-
-    <script>
-        var LoginForm = document.getElementById("LoginForm");
-        var RegForm = document.getElementById("RegForm");
-        var Indicador = document.getElementById("Indicador");
-
-        function register(){
-
-            RegForm.style.transform ="translateX(0px)";
-            LoginForm.style.transform ="translateX(0px)";
-            Indicador.style.transform ="translateX(100px)";
-        }
-         function login(){
-
-            RegForm.style.transform ="translateX(300px)";
-            LoginForm.style.transform ="translateX(300px)";
-            Indicador.style.transform ="translateX(0px)";
-        }
-
-
-    </script>
 
     </body>
 </html>
